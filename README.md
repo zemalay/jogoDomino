@@ -1,2 +1,2 @@
 # jogoDomino
-Porjeto do Jogo Dominó para a Disciplina Engenharia de Software
+Projeto do Jogo Dominó - Disciplina Engenharia de Software
