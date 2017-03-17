@@ -10,10 +10,22 @@ public class Conecta {
 	public Statement stm;
 	public ResultSet rs;
 	public PreparedStatement prep;
+	private static Conecta instance;
+
+	private Conecta() {
+	}
+
+	public static Conecta getInstance() {
+		if (instance == null) {
+			instance = new Conecta();
+		}
+		return instance;
+	}
 
 	public void conecta() throws Exception {
+
 		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:domino.sqlite");
+		conn = DriverManager.getConnection("jdbc:sqlite:BDSqlite/domino.sqlite");
 		stm = conn.createStatement();
 		conn.setAutoCommit(false);
 		conn.setAutoCommit(true);
@@ -21,6 +33,7 @@ public class Conecta {
 	}
 
 	public void desconecta() {
+		@SuppressWarnings("unused")
 		boolean result = true;
 		try {
 			conn.close();
