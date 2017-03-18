@@ -70,7 +70,7 @@ public class telaInicial extends JFrame {
 		
 		JLabel lblimagem = new JLabel("");
 		lblimagem.setForeground(Color.ORANGE);
-		lblimagem.setIcon(new ImageIcon(telaInicial.class.getResource("/br/com/dominio/model/view/Icones/domino.png")));
+		lblimagem.setIcon(new ImageIcon(telaInicial.class.getResource("/resource/imagens/domino.png")));
 		lblimagem.setBounds(0, 0, 654, 398);
 		contentPane.add(lblimagem);
 		
@@ -78,7 +78,7 @@ public class telaInicial extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("pretaicon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/resource/imagens/pretaicon.png")));
 		
 	}
 }
