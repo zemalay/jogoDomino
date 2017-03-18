@@ -9,7 +9,7 @@ public class Main {
 		
 		//Teste de salvamento no Banco de Dados
 		Usuario user = new Usuario();
-		user.setNome("Joanes Miranda");
+		user.setNome("Fabio Ferreira");
 		user.setEmail("joanestecnico@gmail.com");
 		user.setAvatar("testedecaminho");
 		

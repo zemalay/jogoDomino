@@ -1,7 +1,8 @@
 package br.com.domino.model;
 
 public class EstadoDoJogo {
-
+	
+	private Integer id;
 	private Integer pecasDistribuidas;
 	private Integer pecasNaoDistribuidas;
 	private Integer pontuacao;
@@ -10,6 +11,14 @@ public class EstadoDoJogo {
 	private String pecasComputador;
 	private String estadoDoJogo;
 	private Usuario usuario;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public Integer getPecasDistribuidas() {
 		return pecasDistribuidas;
