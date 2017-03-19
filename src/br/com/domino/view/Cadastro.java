@@ -116,6 +116,11 @@ public class Cadastro extends JFrame {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				
+				txtNome.setText("");
+				txtLogin.setText("");
+				passwordFieldSenha.setText("");
+				combo.setSelectedIndex(0);
 
 			}
 		});
