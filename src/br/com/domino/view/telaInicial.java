@@ -53,19 +53,22 @@ public class telaInicial extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnFechar = new JButton("Fechar");
-		btnFechar.setForeground(Color.BLACK);
-		btnFechar.setBackground(Color.WHITE);
-		btnFechar.setBounds(297, 317, 124, 23);
-		contentPane.add(btnFechar);
+		ImageIcon botaoRank = new ImageIcon(".\\resource\\imagens\\IconeRank.png");
+		JButton bntRank = new JButton(botaoRank);
+		bntRank.setForeground(Color.BLACK);
+		bntRank.setBackground(Color.WHITE);
+		bntRank.setBounds(345, 282, 99, 48);
+		contentPane.add(bntRank);
 		
-		JButton btnLogin = new JButton("Login");
+		ImageIcon botaoLogin = new ImageIcon(".\\resource\\imagens\\IconeLogin.png");
+		JButton btnLogin = new JButton(botaoLogin);
 		btnLogin.setBackground(Color.WHITE);
 		btnLogin.setForeground(Color.BLACK);
-		btnLogin.setBounds(238, 47, 124, 23);
+		btnLogin.setBounds(154, 67, 99, 48);
 		contentPane.add(btnLogin);
 		
-		JButton btnCadastro = new JButton("Cadastro");
+		ImageIcon botaoCadastro = new ImageIcon(".\\resource\\imagens\\IconeCadastrar.png");
+		JButton btnCadastro = new JButton(botaoCadastro);
 		btnCadastro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Cadastro telaCadastro = new Cadastro();
@@ -73,12 +76,12 @@ public class telaInicial extends JFrame {
 		});
 		btnCadastro.setForeground(Color.BLACK);
 		btnCadastro.setBackground(Color.WHITE);
-		btnCadastro.setBounds(272, 186, 111, 23);
+		btnCadastro.setBounds(256, 168, 99, 48);
 		contentPane.add(btnCadastro);
 		
 		JLabel lblimagem = new JLabel("");
 		lblimagem.setForeground(Color.ORANGE);
-		lblimagem.setIcon(new ImageIcon(".\\resource\\imagens\\domino.png"));
+		lblimagem.setIcon(new ImageIcon(".\\resource\\imagens\\modelodomino.png"));
 		lblimagem.setBounds(0, 0, 654, 398);
 		contentPane.add(lblimagem);
 		
