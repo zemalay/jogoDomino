@@ -26,7 +26,7 @@ public class EstadoDoJogoController {
 				stm.setString(5, estadoJogo.getPecasJogador());
 				stm.setString(6, estadoJogo.getPecasComputador());
 				stm.setString(7, estadoJogo.getEstadoDoJogo());
-				stm.setInt(8, estadoJogo.getUsuario().getId());
+				stm.setInt(8, estadoJogo.getUsuario());
 				
 				stm.execute();
 				JOptionPane.showMessageDialog(null, "estado do jogo salvo com sucesso");
