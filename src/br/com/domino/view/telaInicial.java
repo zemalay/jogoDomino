@@ -10,6 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class telaInicial extends JFrame {
@@ -64,6 +66,11 @@ public class telaInicial extends JFrame {
 		contentPane.add(btnLogin);
 		
 		JButton btnCadastro = new JButton("Cadastro");
+		btnCadastro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Cadastro telaCadastro = new Cadastro();
+			}
+		});
 		btnCadastro.setForeground(Color.BLACK);
 		btnCadastro.setBackground(Color.WHITE);
 		btnCadastro.setBounds(272, 186, 111, 23);
@@ -71,7 +78,7 @@ public class telaInicial extends JFrame {
 		
 		JLabel lblimagem = new JLabel("");
 		lblimagem.setForeground(Color.ORANGE);
-		lblimagem.setIcon(new ImageIcon(telaInicial.class.getResource(".\\resource\\imagens\\domino.png")));
+		lblimagem.setIcon(new ImageIcon(".\\resource\\imagens\\domino.png"));
 		lblimagem.setBounds(0, 0, 654, 398);
 		contentPane.add(lblimagem);
 		
@@ -79,7 +86,7 @@ public class telaInicial extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource(".\\resource\\imagens\\pretaicon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(".\\resource\\imagens\\pretaicon.png"));
 		
 	}
 }

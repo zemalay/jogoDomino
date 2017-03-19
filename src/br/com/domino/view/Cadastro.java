@@ -121,8 +121,7 @@ public class Cadastro extends JFrame {
 				txtLogin.setText("");
 				passwordFieldSenha.setText("");
 				combo.setSelectedIndex(0);
-
-			}
+				dispose();			}
 		});
 		btnSalvar.setBounds(47, 292, 100, 50);
 		getContentPane().add(btnSalvar);
