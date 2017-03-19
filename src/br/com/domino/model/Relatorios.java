@@ -6,7 +6,7 @@ public class Relatorios {
 
 	private Time tempoDeJogo;
 	private Integer pontuacao;
-	private Usuario usuario;
+	private int usuario;
 
 	public Time getTempoDeJogo() {
 		return tempoDeJogo;
@@ -24,11 +24,11 @@ public class Relatorios {
 		this.pontuacao = pontuacao;
 	}
 
-	public Usuario getUsuario() {
+	public int getUsuario() {
 		return usuario;
 	}
 
-	public void setUsuario(Usuario usuario) {
+	public void setUsuario(int usuario) {
 		this.usuario = usuario;
 	}
 

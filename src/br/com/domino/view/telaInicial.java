@@ -1,6 +1,5 @@
 package br.com.domino.view;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,14 +8,16 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.SwingConstants;
 import java.awt.Color;
-import java.awt.SystemColor;
 import java.awt.Toolkit;
 
 
 public class telaInicial extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
 	/**
@@ -70,7 +71,7 @@ public class telaInicial extends JFrame {
 		
 		JLabel lblimagem = new JLabel("");
 		lblimagem.setForeground(Color.ORANGE);
-		lblimagem.setIcon(new ImageIcon(telaInicial.class.getResource("/resource/imagens/domino.png")));
+		lblimagem.setIcon(new ImageIcon(telaInicial.class.getResource(".\\resource\\imagens\\domino.png")));
 		lblimagem.setBounds(0, 0, 654, 398);
 		contentPane.add(lblimagem);
 		
@@ -78,7 +79,7 @@ public class telaInicial extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/resource/imagens/pretaicon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource(".\\resource\\imagens\\pretaicon.png")));
 		
 	}
 }

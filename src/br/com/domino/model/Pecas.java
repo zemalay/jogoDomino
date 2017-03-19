@@ -5,33 +5,38 @@ public class Pecas {
 	private Integer valorTopo;
 	private Integer valorInferior;
 	private Integer pecaAssociada;
-	private EstadoDoJogo estadoDoJogo;
-	
-	
+	private int estadoDoJogo;
+
 	public Integer getValorTopo() {
 		return valorTopo;
 	}
+
 	public void setValorTopo(Integer valorTopo) {
 		this.valorTopo = valorTopo;
 	}
+
 	public Integer getValorInferior() {
 		return valorInferior;
 	}
+
 	public void setValorInferior(Integer valorInferior) {
 		this.valorInferior = valorInferior;
 	}
+
 	public Integer getPecaAssociada() {
 		return pecaAssociada;
 	}
+
 	public void setPecaAssociada(Integer pecaAssociada) {
 		this.pecaAssociada = pecaAssociada;
 	}
-	public EstadoDoJogo getEstadoDoJogo() {
+
+	public int getEstadoDoJogo() {
 		return estadoDoJogo;
 	}
-	public void setEstadoDoJogo(EstadoDoJogo estadoDoJogo) {
+
+	public void setEstadoDoJogo(int estadoDoJogo) {
 		this.estadoDoJogo = estadoDoJogo;
 	}
-	
-	
+
 }

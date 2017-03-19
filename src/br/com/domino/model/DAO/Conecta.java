@@ -25,7 +25,7 @@ public class Conecta {
 	public void conecta() throws Exception {
 
 		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:BDSqlite/domino.sqlite");
+		conn = DriverManager.getConnection("jdbc:sqlite:.\\BDSqlite\\jogoDomino.sqlite");
 		stm = conn.createStatement();
 		conn.setAutoCommit(false);
 		conn.setAutoCommit(true);
@@ -37,7 +37,7 @@ public class Conecta {
 		boolean result = true;
 		try {
 			conn.close();
-			JOptionPane.showMessageDialog(null, "banco fechado");
+			//JOptionPane.showMessageDialog(null, "banco fechado");
 		} catch (SQLException fecha) {
 			JOptionPane.showMessageDialog(null, "Não foi possivel " + "fechar o banco de dados: " + fecha);
 			result = false;

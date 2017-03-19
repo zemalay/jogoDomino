@@ -1,13 +1,12 @@
 package br.com.domino.model;
 
+
 public class Usuario {
 	
 	private Integer id;
 	private String nome;
-	private String email;
-	private String avatar;
+	private Integer avatar;
 
-	
 	public Integer getId() {
 		return id;
 	}
@@ -24,20 +23,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getAvatar() {
+	public Integer getAvatar() {
 		return avatar;
 	}
 
-	public void setAvatar(String avatar) {
-		this.avatar = avatar;
+	public void setAvatar(Integer avatar2) {
+		this.avatar = avatar2;
 	}
 
 }

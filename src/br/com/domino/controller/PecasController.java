@@ -21,7 +21,7 @@ public class PecasController {
 				stm.setInt(1,p.getValorTopo());
 				stm.setInt(2, p.getValorInferior());
 				stm.setInt(3, p.getPecaAssociada());
-				stm.setInt(4,p.getEstadoDoJogo().getId());
+				stm.setInt(4,p.getEstadoDoJogo());
 				stm.execute();
 				JOptionPane.showMessageDialog(null, "peças do jogo salvo com sucesso");
 			} catch (SQLException ex) {

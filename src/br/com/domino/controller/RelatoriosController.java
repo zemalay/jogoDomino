@@ -19,7 +19,7 @@ public class RelatoriosController {
 					.prepareStatement("INSERT INTO relatorios (tempo_de_jogo,pontuacao,fk_usuario) VALUES (?,?,?)");
 			stm.setTime(1, r.getTempoDeJogo());
 			stm.setInt(2, r.getPontuacao());
-			stm.setInt(3, r.getUsuario().getId());
+			stm.setInt(3, r.getUsuario());
 			stm.execute();
 
 			JOptionPane.showMessageDialog(null, "realtorio salvo com sucesso");
